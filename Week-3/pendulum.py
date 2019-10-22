@@ -1,11 +1,16 @@
-def period(length,mass):
-    if isinstance(length,int)=False|isinstance(mass,int)=False:
-        print('typeError') 
-
-    if mass=0:
-        print('ValueError')
-
-    import math
-    periodd=2*math.pi*(length/mass)**1/2
-    print length.isdigit()
+import math
+def period(length,g):
+    if isinstance(length,int)==False|isinstance(g,int)==False:
+        print('typeError')
+       
+    periodd=2*math.pi*(length/g)**1/2
     return periodd
+
+
+def main():
+    a=int(input('length'))
+    b=int(input('g'))
+    print(period(a,b))
+
+if __name__ == "__main__":
+    main()
